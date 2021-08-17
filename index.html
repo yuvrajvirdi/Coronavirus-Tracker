@@ -1,0 +1,67 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Coronavirus Stat Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="search-box">
+            <input 
+                class="search" 
+                type="text" 
+                id="inputField" 
+                placeholder="Track a country..."
+            >
+            <button class="searchBtn" onclick="displayData();">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <header>
+            <h1>Coronavirus Tracker</h1>
+            <h2 id="name"></h2>
+        </header>
+
+        <div class="data-cards">
+
+            <div class="card">
+                <div class="heading">Confirmed Cases</div>
+                <div class="data" id="cases"></div>
+                <div class="heading" >Active Cases</div>
+                <div class="data" id="active-cases"></div>
+                <div class="heading">Critical Cases</div>
+                <div class="data" id="critical-cases"></div>
+            </div>
+
+            <div class="card">
+                <div class="heading">Recovered Cases</div>
+                <div class="data" id="recovered"></div>
+            </div>
+           
+            <div class="card">
+                <div class="heading">Total Deaths</div>
+                <div class="data" id="deaths"></div>
+            </div>
+
+            <div class="card">
+                <div class="heading">Tests Conducted</div>
+                <div class="data" id="tests"></div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
