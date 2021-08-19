@@ -16,14 +16,14 @@
     <main>
 
         <div class="search-box">
-            <input 
-                class="search" 
-                type="text" 
-                id="inputField" 
-                placeholder="Track a country..."
-            >
+                <input 
+                    class="search-bar" 
+                    type="text" 
+                    id="inputField" 
+                    placeholder="Track a country..."
+                >
             <button class="searchBtn" onclick="displayData();">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search"></i>
             </button>
         </div>
 
@@ -35,36 +35,46 @@
         <div class="data-cards">
 
             <div class="card-wrapper">
-                <div class="card">
-                    <div class="heading">Confirmed Cases</div>
-                    <div class="data" id="cases"></div>
-                    <div class="heading" >Active Cases</div>
-                    <div class="data" id="active-cases"></div>
-                    <div class="heading">Critical Cases</div>
-                    <div class="data" id="critical-cases"></div>
+                <div class="tests-card">
+                    <div class="heading">Tests Conducted:</div>
+                    <div class="data" id="tests"></div>
                 </div>
             </div>
 
             <div class="card-wrapper">
-                <div class="card">
-                    <div class="heading">Recovered Cases</div>
+                <div class="confirmed-card">
+                    <div class="heading">Confirmed Cases:</div>
+                    <div class="data" id="cases"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="recovered-card">
+                    <div class="heading">Active Cases:</div>
+                    <div class="data" id="active-cases"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="heading">Critical Cases:</div>
+                <div class="data" id="critical-cases"></div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="recovered-card">
+                    <div class="heading">Recovered Cases:</div>
                     <div class="data" id="recovered"></div>
                 </div>
             </div>
            
             <div class="card-wrapper">
-                <div class="card">
-                    <div class="heading">Total Deaths</div>
+                <div class="deaths-card">
+                    <div class="heading">Total Deaths:</div>
                     <div class="data" id="deaths"></div>
                 </div>
             </div>
 
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="heading">Tests Conducted</div>
-                    <div class="data" id="tests"></div>
-                </div>
-            </div>
+            
 
         </div>
 
@@ -72,3 +82,4 @@
 </body>
 
 </html>
+
