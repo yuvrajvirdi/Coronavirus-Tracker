@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313131;
+}
+
+main {
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
+}
+
+.search-box {
+    margin-top: 10px;
+}
+
+.search-box .search-bar {
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: #313131;
+    font-size: 15px;
+    transition: 0.4s ease;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 5px rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.search-box .search-bar:focus {
+    background-color: rgba(255,255,255,0.75);
+}
+
+.search-box .searchBtn {
+    padding: 15px;
+    font-size: 15px;
+    transition: 0.4s ease;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 5px rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+
+.data-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card-wrapper {
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 5px rgba( 0, 0, 0, 0.2 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 25px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: 200px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100px;
+}
