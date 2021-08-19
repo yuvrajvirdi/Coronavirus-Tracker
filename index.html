@@ -13,7 +13,16 @@
 
 <body>
 
+    <video id="video-background" poster="/assets/poster.png" autoplay muted loop>
+        <source src="/assets/earth.mp4" type="video/mp4">
+    </video>
+
     <main>
+
+        <header>
+            <h1>Coronavirus Tracker</h1>
+            <h2 id="name"></h2>
+        </header>
 
         <div class="search-box">
                 <input 
@@ -27,53 +36,135 @@
             </button>
         </div>
 
-        <header>
-            <h1>Coronavirus Tracker</h1>
-            <h2 id="name"></h2>
-        </header>
 
         <div class="data-cards">
-
-            <div class="card-wrapper">
+            <!--raw numbers-->
+            <div class="card-wrapper num">
                 <div class="tests-card">
                     <div class="heading">Tests Conducted:</div>
                     <div class="data" id="tests"></div>
                 </div>
             </div>
 
-            <div class="card-wrapper">
+            <div class="card-wrapper num">
                 <div class="confirmed-card">
                     <div class="heading">Confirmed Cases:</div>
                     <div class="data" id="cases"></div>
                 </div>
             </div>
 
-            <div class="card-wrapper">
+            <div class="card-wrapper num">
                 <div class="recovered-card">
                     <div class="heading">Active Cases:</div>
                     <div class="data" id="active-cases"></div>
                 </div>
             </div>
 
-            <div class="card-wrapper">
+            <div class="card-wrapper num">
                 <div class="heading">Critical Cases:</div>
                 <div class="data" id="critical-cases"></div>
             </div>
 
-            <div class="card-wrapper">
+            <div class="card-wrapper num">
                 <div class="recovered-card">
                     <div class="heading">Recovered Cases:</div>
                     <div class="data" id="recovered"></div>
                 </div>
             </div>
            
-            <div class="card-wrapper">
+            <div class="card-wrapper num">
                 <div class="deaths-card">
                     <div class="heading">Total Deaths:</div>
                     <div class="data" id="deaths"></div>
                 </div>
             </div>
 
+            <div class="card-wrapper num">
+                <div class="population-card">
+                    <div class="heading">Total Population:</div>
+                    <div class="data" id="population"></div>
+                </div>
+            </div>
+
+            <!--raw percentages-->
+
+            <div class="card-wrapper percentage">
+                <div class="confirmed-card">
+                    <div class="heading">% of Population Affected</div>
+                    <div class="data" id="confirmed-percents"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper percentage">
+                <div class="active-card">
+                    <div class="heading">% of Population Currently Infected</div>
+                    <div class="data" id="active-percents"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper percentage">
+                <div class="critical-card">
+                    <div class="heading">% of Population in Critical Condition</div>
+                    <div class="data" id="critical-percents"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper percentage">
+                <div class="recovered-card">
+                    <div class="heading">Recovery Rate</div>
+                    <div class="data" id="recovered-percents"></div>
+                </div>
+            </div>
+            
+            <div class="card-wrapper percentage">
+                <div class="deaths-card">
+                    <div class="heading">Death Rate</div>
+                    <div class="data" id="deaths-percents"></div>
+                </div>
+            </div>
+
+            <!--raw stats-->
+            <div class="card-wrapper stat">
+                <div class="tests-card">
+                    <div class="heading">Tests Per Million:</div>
+                    <div class="data" id="tests-stats"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper stat">
+                <div class="confirmed-card">
+                    <div class="heading">Confirmed Per Million:</div>
+                    <div class="data" id="confirmed-stats"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper stat">
+                <div class="active-card">
+                    <div class="heading">Active Per Million:</div>
+                    <div class="data" id="active-stats"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper stat">
+                <div class="critical-card">
+                    <div class="heading">Critical Per Million:</div>
+                    <div class="data" id="critical-stats"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper stat">
+                <div class="recovered-card">
+                    <div class="heading">Recovered Per Million:</div>
+                    <div class="data" id="recovered-stats"></div>
+                </div>
+            </div>
+
+            <div class="card-wrapper stat">
+                <div class="deaths-card">
+                    <div class="heading">Deaths Per Million:</div>
+                    <div class="data" id="deaths-stats"></div>
+                </div>
+            </div>
             
 
         </div>
@@ -82,4 +173,3 @@
 </body>
 
 </html>
-
