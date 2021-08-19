@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
     padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    background-color: #313131;
+    background-color: grey;
 }
 
 main {
@@ -17,6 +18,7 @@ main {
 
 .search-box {
     margin-top: 10px;
+    font-family: arial;
 }
 
 .search-box .search-bar {
@@ -51,8 +53,21 @@ main {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.searchBtn:hover {
+    background: rgba( 255, 255, 255, 0.75 );
+}
 
+header h1 {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+    font-size: 2rem;
+}
 
+header h2 {
+    font-family: 'Rubik';
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
 
 .data-cards {
     display: flex;
@@ -63,12 +78,8 @@ main {
 
 .card-wrapper {
     overflow: hidden;
-    background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 5px rgba( 0, 0, 0, 0.2 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 25px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 25px;
+    border: 2px solid black;
     text-align: center;
     border-radius: 1rem;
     position: relative;
@@ -78,3 +89,66 @@ main {
     margin-right: 2rem;
     height: 100px;
 }
+
+.heading {
+    font-family: 'Rubik';
+    color: #000;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+}
+
+.data {
+    font-family: 'Rubik';
+    margin-top: 10px;;
+}
+
+.first {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
+.second {
+    background: rgba( 248, 231, 28, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 248, 231, 28, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
+.third {
+    background: rgba( 245, 166, 35, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 245, 166, 35, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
+.fourth {
+    background: rgba( 208, 2, 27, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 208, 2, 27, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
+.fifth {
+    background: rgba( 126, 211, 33, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 126, 211, 33, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
+.sixth {
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+
